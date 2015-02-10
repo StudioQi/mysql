@@ -24,6 +24,8 @@ tmpdir      = /tmp
 # language is for pre-5.5. In 5.5 it is an alias for lc_messages_dir.
 language = {{ mysql_language }}
 bind-address = {{ mysql_bind_address }}
+innodb_file_per_table = ON
+innodb_file_format = Barracuda
 skip-external-locking
 
 
